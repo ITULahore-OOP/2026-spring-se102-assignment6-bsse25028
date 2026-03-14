@@ -91,7 +91,7 @@ TEST_CASE("9: Guild Statistics Display", "[output]")
     g += &h2;
 
     OutputCapture capture;
-    g.displayGuildStats();
+    g.displayGuildStatus();                                                //fixed the spelling mistake that was causing an error:)
     string output = capture.getOutput();
 
     // Verify the specific stats are present in the output
